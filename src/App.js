@@ -17,10 +17,10 @@ function App() {
             <Header/>
             <main className="inner">
                 <Switch>
-                    <Route path='/' exact>
+                    <Route path={process.env.PUBLIC_URL + '/'} exact>
                         <Randomizer banPoints = {banPoints} setBanPoints = {setBanPoints} options = {options} setOptions = {setOptions} selected={selected} setSelected={setSelected} showAnswer={showAnswer} setShowAnswer = {setShowAnswer} timer={timer} setTimer={setTimer}/>
                     </Route>
-                    <Route path='/about'>
+                    <Route path={process.env.PUBLIC_URL + '/about'}>
                         <About/>
                     </Route>
                 </Switch>
