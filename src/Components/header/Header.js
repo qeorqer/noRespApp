@@ -9,15 +9,15 @@ let Header = () => {
     <header>
         <div className="inner">
             <div className="logo">
-                <NavLink to={process.env.PUBLIC_URL + '/'} exact><img src={Logo} alt="Logo"/></NavLink>
+                <NavLink to='/' exact><img src={Logo} alt="Logo"/></NavLink>
             </div>
             <div className={"menuToggler"  +(openMenu  ? " menuOpen" : "")} onClick={() => {setOpenMenu(!openMenu)}}>
                 <span></span>
             </div>
             <nav className={(openMenu  ? " menuOpen" : "")}>
                 <ul>
-                    <li onClick={() => {setOpenMenu(!openMenu)}}><NavLink to={process.env.PUBLIC_URL + '/'} exact>Ну так-то главная</NavLink></li>
-                    <li onClick={() => {setOpenMenu(!openMenu)}}><NavLink to={process.env.PUBLIC_URL + '/about'}>Што это</NavLink></li>
+                    <li onClick={() => {setOpenMenu(!openMenu)}}><NavLink to='/' exact>Ну так-то главная</NavLink></li>
+                    <li onClick={() => {setOpenMenu(!openMenu)}}><NavLink to='/about'>Што это</NavLink></li>
                 </ul>
             </nav>
         </div>
