@@ -24,7 +24,7 @@ function App() {
                         <About/>
                     </Route>
                 </Switch>
-                <div className={"banScore" + (banPoints > 0 ? " showScore" : "")}>
+                <div className={"banScore" + ((banPoints > 0 && banPoints !== 3) ? " showScore" : "")}>
                     {
                         banPoints === 2 ? <p>Один шаг может изменить жизнь</p> :<p>Шагов до бана: <span>{3 - banPoints}</span></p>
                     }
