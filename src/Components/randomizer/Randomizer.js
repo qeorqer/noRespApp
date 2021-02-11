@@ -90,7 +90,7 @@ let Randomizer = (props) => {
 
 
                 <div className="selectionResult" style={{display: showAnswer ? 'flex' : 'none'}}>
-                    {timer > 0 && <p>Раскрытие интргии через {timer}</p>}
+                    {timer > 0 && <p>Раскрытие интриги через {timer}</p>}
 
                     {
                         selected && (options.length > 1 ? <div><span>Ответ, что ли: </span>
