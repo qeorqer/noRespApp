@@ -1,17 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-let Randomizer = () => {
-    let [options, setOptions] = useState([]);
+let About = () => {
 
-
-    let addOption = (e) =>{
-        let input = document.querySelector(".addStuff input");
-        let form = document.querySelector(".addStuff form");
-
-        e.preventDefault();
-        setOptions([...options,input.value]);
-        form.reset();
-    }
     return (
         <div className="content">
             <h2>WTF!? </h2>
@@ -21,4 +11,4 @@ let Randomizer = () => {
         </div>
     )
 }
-export default Randomizer;
+export default About;
